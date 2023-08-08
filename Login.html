@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body class="bg-dark">
+    <div class="container  text-center">
+        <div class="signin  mx-auto w-75 my-5 p-3">
+        <h1 class="text-info py-4">Smart Login System</h1>
+        <input type="email" id="userLoginMail" placeholder="Enter Your Email" class="form-control mb-3 bg-transparent w-75 mx-auto text-white">
+        <input type="password" id="userLoginPass" placeholder="Enter Your Passwrod" class="form-control mb-4 bg-transparent w-75 mx-auto text-white">
+        <p  id="emptyForm" class=" text-danger d-none text-capitalize">Please fill all the gaps !</p>
+        <button id="loginBtn" onclick="addLoginData()" class="btn btn-outline-info w-75 mb-4">Login</button>
+        <p class="text-light mb">If You Don`t have an account <span><a href="index.html" class="text-primary">Sign Up</a></span> </p>
+    </div>
+    </div>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary d-none " id="modalbutton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Wrong Data</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger w-100" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.regester input::placeholder,.signin input::placeholder{
+    color: white;
+}
+.regester ,.signin {
+    box-shadow: 0px 0px 50px #888888;
+}
+.home{
+    box-shadow: rgba(126, 121, 121, 0.56) 0px 22px 70px 4px;
+}

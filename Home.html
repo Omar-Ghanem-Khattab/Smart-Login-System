@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Regester</title>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Css/bootstrap.min.css">
+        <link rel="stylesheet" href="Css/all.min.css">
+        <link rel="stylesheet" href="Css/style.css">
+    </head>
+    <body class="bg-dark">
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="home mx-auto w-25 my-5 p-5 text-center rounded">
+                <div class="inner ">
+                    <h2 class="text-success" >Welcome <span class="userName text-primary fw-bolder text-capitalize"></span></h2>
+                    <button onclick="logout()" class="btn btn-danger w-50 p-3">LogOut</button>
+                </div>
+            </div>
+        </div>
+        <!-- Only On this Page -->
+        <script>
+            let currentSession = JSON.parse(sessionStorage.getItem('loginStoragedData'));
+            currentSession == null ? window.location.href = 'login.html' : '';
+            if (currentSession[0]) {
+                document.querySelector('.userName').innerHTML = currentSession[0].userName;
+            }
+        </script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
