@@ -107,7 +107,7 @@ function addRegesterData() {
             // clear inputs
             clearRegesterForm();
     
-            location.href = "home.html";
+            window.location.href = "home.html";
         }
 
         
@@ -134,7 +134,7 @@ function addLoginData() {
                 sessionStorage.setItem(loginStorageName,JSON.stringify(savedLoginData));
                 clearLoginForm();
 
-                location.href = "home.html";
+                window.location.href = "home.html";
 
 
             } else {
@@ -175,7 +175,7 @@ function  clearLoginForm()
 
 function logout() {
     sessionStorage.removeItem('loginStoragedData');
-    location.reload();
+    window.location.reload();
 }
 
 
