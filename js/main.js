@@ -20,8 +20,6 @@ if (localStorage.getItem(storageName)!= null)
 function saveInStorage() {
     localStorage.setItem(storageName, JSON.stringify(savedData));
 }
-//  sessionStorage.setitem(loginStorageName,JSON.stringify(savedLoginData))
-
 //SECTION - Validation
 
 function validateRegestrationForm() 
@@ -136,7 +134,7 @@ function addLoginData() {
                 sessionStorage.setItem(loginStorageName,JSON.stringify(savedLoginData));
                 clearLoginForm();
 
-                location.href = "Home.html";
+                location.href = "home.html";
 
 
             } else {
